@@ -1,0 +1,275 @@
+/******************TAG SELECTORS***********************/
+a {
+  color: #00204a;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+   font-family: 'Merriweather', serif;
+   font-size: 1rem;
+   color: #40514E;
+   line-height: 2;
+}
+
+h1 {
+  font-size: 5.525rem;
+  margin-top: 50;
+  margin-bottom: 0;
+  font-family: 'Lobster', cursive;
+  color: #00bbf0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  margin-bottom: 0;
+  color: #00bbf0;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #005792;
+}
+
+hr{
+  color:#A9A9A9;
+  border:0;
+  border-bottom: 8px dotted;
+  width: 4%;
+  margin: 100px auto;
+}
+
+/******************CLASS SELECTORS*********************/
+.top-container {
+  background-color: #d9faff;
+  position: relative;
+  padding: 50px 0 0 0;
+}
+
+@keyframes drifting-left {
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: 5%;
+  }
+}
+
+.left-cloud {
+  position: absolute;
+  left: 5%;
+  width: 40%;
+  animation-name: drifting-left;
+  animation-duration: 30s;
+  /* animation-delay: 2s; */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes drifting-right {
+  from {
+    left: 60%;
+  }
+
+  to {
+    left: 65%;
+  }
+}
+
+.right-cloud {
+  position: absolute;
+  width: 30%;
+  left: 60%;
+  bottom: 30%;
+  animation-name: drifting-right;
+  animation-duration: 30s;
+  /* animation-delay: 2s; */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes flying-plane {
+  0% {
+    top: 50%;
+    left: 100%;
+  }
+
+  20% {
+    top: 55%
+  }
+
+  40% {
+    top: 60%;
+    width: 3%;
+  }
+
+  80% {
+    top: 55%
+  }
+
+  100% {
+    top: 50%;
+    left: -1%;
+  }
+}
+
+.ea6b1 {
+  position: absolute;
+  left: -200px;
+  width: 4%;
+  animation-name: flying-plane;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes flying-plane2 {
+  0% {
+    top: 70%;
+    right: 100%;
+    opacity: 1;
+  }
+
+  20% {
+    top: 73%
+  }
+
+  40% {
+    top: 76%;
+    width: 3%;
+  }
+
+  70% {
+    top: 78%
+  }
+
+95%{
+  opacity: 1;
+}
+  100% {
+    top: 68%;
+    right: 0%;
+    opacity: 0;
+  }
+}
+
+
+  .ea6b2 {
+    position: absolute;
+    transform: scaleX(-1);
+    bottom: 200px;
+    width: 4%;
+    animation-name: flying-plane2;
+    animation-duration: 5s;
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+
+.img-mt {
+  padding: 100px 0 0 0;
+  bottom: 0;
+  width: 100%;
+  max-height: 450px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.profile {
+  /* padding-bottom: 50px; */
+}
+
+.profile-img {
+  width: 12.5%
+}
+
+.intro{
+  width: 30%;
+  margin:auto;
+}
+.skills {
+  /* padding: 50px 0 0px 0; */
+}
+
+.skill-row {
+  text-align: left;
+  line-height: 2;
+  width: 50%;
+  margin: 30px auto 60px auto;
+}
+
+.prowler-image {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.ega-image {
+  float: right;
+  width: 25%;
+  margin-left: 30px;
+}
+
+.computer{
+  float: left;
+  width: 25%;
+  margin-right: 30px;
+
+}
+.contact-me {
+  width:40%;
+  margin: 40px auto;
+  /* padding: 50px 0 50px 0; */
+}
+
+.bottom-container {
+  background-color: #d9faff;
+  font-family: "Merriweather";
+  font-size: 1.0rem;
+  color: #40514E;
+  line-height: 2;
+  padding:0 0 20px;
+}
+
+.myButton {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Merriweather;
+  font-size: 19px;
+  padding: 13px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+
+.myButton:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+}
+
+@@keyframes background-color {
+  100%{
+    background-color: #408c99;
+  }
+
+}
+/* .myButton:active {
+  position: relative;
+  top: 1px;
+} */
